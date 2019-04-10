@@ -27,3 +27,4 @@ done
 echo "Total number of positive integers are $pos"
 echo "Total number of negative integers are $neg"
 echo "Total number of zeros are $zero"
+
