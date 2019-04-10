@@ -15,6 +15,6 @@ read ch
 case $ch in
 	+ ) echo "$a + $b" | bc;;
 	- ) echo "$a - $b" | bc;;
-	* ) echo "$a * $b" | bc;;
+	\* ) echo "$a * $b" | bc;;
 	/ ) echo "scale=2;$a / $b" | bc;;
 esac
