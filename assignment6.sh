@@ -13,9 +13,9 @@ fi
 
 echo -e "\nEnter the rate : \c"
 read rate
-if [ $rate -le 100 ] || [ $rate -gt 1000 ]; 
+if [ $rate -le 100 ] || [ $rate -gt 10000 ]; 
 then
-	echo -e "\nRate must be between 100 and 1000"
+	echo -e "\nRate must be between 100 and 10000"
 	echo -e "Enter the rate again : \c"
 	read rate
 fi
