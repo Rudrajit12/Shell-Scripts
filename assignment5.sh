@@ -27,3 +27,14 @@ done
 echo "Total number of positive integers are $pos"
 echo "Total number of negative integers are $neg"
 echo "Total number of zeros are $zero"
+
+echo "Number of directories in current directory is :"
+ls -lr | grep -c "^d"
+echo "Names of directories present in current directory are :"
+ls -lr | grep "^d"|awk '{printf " "$NF}'
+echo 
+echo "Number of files in current directory is :"
+ls -lr | grep -vc "^d"
+echo "Names of files in current directory are :"
+ls -lr | grep -v "^d"|awk '{printf " "$NF}'
+echo
