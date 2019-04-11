@@ -7,8 +7,7 @@ read qty
 if [[ $qty -lt 1 ]]; 
 then
 	echo -e "\nQuantity should be greater than 0"
-	echo -e "Enter the quantity again : \c"
-	read qty
+	exit
 fi
 
 echo -e "\nEnter the rate : \c"
@@ -16,8 +15,8 @@ read rate
 if [ $rate -le 100 ] || [ $rate -gt 10000 ]; 
 then
 	echo -e "\nRate must be between 100 and 10000"
-	echo -e "Enter the rate again : \c"
-	read rate
+	exit
 fi
 (( item_code=item_code + 1 ))
 echo "$item_code | $qty | $rate" >> item.dat
+cat item.dat
